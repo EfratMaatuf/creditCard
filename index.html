@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="card">
+      <div class="card-wrapper"></div>
+      <br />
+      <form>
+        <input type="text" name="number" placeholder="Card number" />
+        <input type="text" name="name" placeholder="Full name" />
+        <br />
+        <input type="text" name="expiry" placeholder="MM/YY" id="expiry" />
+        <input type="text" name="cvc" placeholder="CVC" id="cvc" />
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <script src="card.js"></script>
+    <script>
+      var card = new Card({
+        form: "form",
+        container: ".card-wrapper",
+
+        placeholders: {
+          number: "**** **** **** ****",
+          name: "Israel Israeli",
+          expiry: "**/****",
+          cvc: "***",
+        },
+      });
+    </script>
+  </body>
+</html>

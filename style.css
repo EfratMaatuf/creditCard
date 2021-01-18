@@ -1,0 +1,17 @@
+form {
+  text-align: center;
+}
+input {
+  height: 30px;
+  margin-top: 5px;
+}
+#expiry,
+#cvc {
+  width: 100px;
+}
+button {
+  width: 133px;
+  height: 35px;
+  background-color: blue;
+  color: beige;
+}
